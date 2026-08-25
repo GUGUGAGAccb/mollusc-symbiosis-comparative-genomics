@@ -18,7 +18,7 @@ The combined 14-species analysis is retained as a phylogenetic baseline. *Fragum
 ## Repository contents
 
 - `scripts/` — the final Step 17 script set, with editor swap files removed and personal paths/accounts sanitised.
-- `docs/RUN_ORDER.zh-CN.md` — complete ordered execution guide, including the purpose, inputs, tools, dependencies, commands and outputs for every step.
+- `docs/RUN_ORDER.md` — complete ordered execution guide, including the purpose, inputs, tools, dependencies, commands and outputs for every step.
 - `docs/SCRIPT_STATUS.md` — identifies authoritative entry points, helper scripts and superseded IQ-TREE entry points.
 - `docs/PORTABILITY_AND_SECURITY.md` — BluePebble-specific paths, data policy, security notes and portability requirements.
 - `metadata/` — sanitised final-run selection, data lineage, software/database versions, Slurm ledger, checksums, limitations, archive validation and sanitisation records.
@@ -66,7 +66,7 @@ cp /path/to/this/repository/scripts/* scripts/
 chmod u+x scripts/*
 ```
 
-Then follow [the ordered Chinese run guide](docs/RUN_ORDER.zh-CN.md). Do not run all files alphabetically: several files are Python/R workers, several are Slurm jobs, and a few are environment/validation helpers rather than pipeline entry points.
+Then follow [the ordered English run guide](docs/RUN_ORDER.md). Do not run all files alphabetically: several files are Python/R workers, several are Slurm jobs, and a few are environment/validation helpers rather than pipeline entry points.
 
 ## Authoritative final-analysis choices
 
