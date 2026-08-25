@@ -9,5 +9,6 @@ site_software_path	EGGNOG_TAXDB	PASS_replaced	The site-specific eggNOG taxonomy-
 local_macos_paths	none	PASS_no_matches	No local user-home path is present in tracked files.
 personal_email	none	PASS_no_matches	No personal email address is present in tracked files.
 credentials	none	PASS_no_matches	No password, access token or private-key block is present in tracked files.
+publication_language	English	PASS_converted	All published repository filenames and human-readable content use English.
 git_history	single_sanitised_root_commit	PASS_rewritten	The local repository history was rebuilt so the pre-sanitisation commit is not published or retained in Git references.
 source_archive	SHA256_only	PASS_offline	The unmodified source archive remains offline and is not included in GitHub.
