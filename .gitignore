@@ -1,0 +1,59 @@
+.DS_Store
+*.swp
+*.swo
+*~
+
+# Credentials and local configuration
+.env
+.env.*
+*.pem
+*.key
+id_rsa*
+id_ed25519*
+credentials*
+secrets*
+
+# HPC logs, schedulers and temporary files
+logs/
+slurm-*.out
+slurm-*.err
+tmp/
+*.pid
+
+# Raw or large biological data are intentionally not versioned
+*.fastq
+*.fastq.gz
+*.fq
+*.fq.gz
+*.bam
+*.bai
+*.cram
+*.crai
+*.fasta
+*.fa
+*.faa
+*.fna
+*.ffn
+*.gff
+*.gff3
+*.gtf
+*.hmm
+*.h3f
+*.h3i
+*.h3m
+*.h3p
+
+# Generated analyses, databases and environments
+results_or_reports/
+result/
+orthofinder_results/
+busco_proteomes/
+busco_primary_proteomes/
+databases/
+conda_envs/
+conda_pkgs/
+
+# Local export bundles
+*.zip
+*.tar
+*.tar.gz
