@@ -1,0 +1,12 @@
+decision	record
+species_scope	Analyse Bivalvia (6) and Gastropoda (8) separately; retain 14-species combined tree as baseline.
+proteome_threshold	Core species require BUSCO complete >=80%; Fragum_fragum was replaced by Fragum_sueziense for paired genome/proteome availability and quality.
+resources	Downstream jobs capped at 12 CPUs and 16 GB memory.
+iqtree	Restricted ModelFinder set used to accelerate protein-tree inference while retaining UFBoot1000 and SH-aLRT1000.
+cafe	Relative root age 100 is exploratory; no absolute divergence-time claim. Gastropoda Gamma significance is unreliable; Base model is primary.
+annotation	eggNOG transfer and direct Pfam evidence kept distinct; annotation-source sensitivity quantified.
+sequence_validation	Exclude/review flags are retained for audit; high-risk families require manual review.
+transcriptomics	One selected library per represented species; detection only, no differential expression or cross-species TPM comparison.
+prioritisation	Missing RNA/HyPhy is not a biological zero; scores are normalised over available evidence.
+sensitivity	Corrected Step 15 run 18431248 is authoritative; historical run 18428504 is not final.
+archive	Large reconstructible OrthoFinder directories are not duplicated; final large tables use lossless tar.gz where appropriate.

@@ -1,0 +1,4 @@
+archive	status	expected_files	observed_files	bytes	sha256	note
+visualisations	PASS	12	12	930148	90a68a608bf9ea115906760afdd885f32755ee0f7bb5efe224cf2e789eb344d7	all members decompressed successfully
+all_tsv_tables	PASS	565	565	41310728	8a336b7ce1d627a52893c38888e5ed1919a8ddf689db292352ecfc9acbcdc6a9	all members decompressed successfully
+reproducibility_scripts	PASS	77	77	110050	fa059c799a895a22e9b31e3ee52bc9ebb9c14b1c7893d272235aa69201018cd4	all members decompressed successfully

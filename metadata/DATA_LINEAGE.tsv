@@ -1,0 +1,18 @@
+step	input	process	output	downstream
+1	Downloaded primary proteomes	BUSCO + redundancy metrics	core/supplementary species decisions	Steps 2-3
+2	Core primary proteomes	OrthoFinder	orthogroups, copy-number matrices, gene trees	Steps 3-6
+3	Single-copy orthologue alignments	IQ-TREE restricted MFP	supported species trees	Steps 5,11
+4	Orthogroup tables	distribution classification	core/shell/species-specific summaries	Step 16
+5	Gene-count matrices + species trees	CAFE5 Base model	significant family changes	Step 6
+6	CAFE changes + sequences	candidate-family selection	candidate families and proteins	Steps 7-14
+7	Candidate proteins	eggNOG-mapper	functional annotations	Steps 8,14
+8	Candidate family annotations	Fisher/BH enrichment	candidate-internal enrichment	Steps 14,16
+9	Candidate proteins + Pfam 38.2	HMMER/rule validation	pass/review/risk calls	Steps 10,14
+10	Validated family sequences	MAFFT + trimAl + IQ-TREE	60 candidate gene trees	Steps 11-12
+11	Gene trees + species trees	DL-LCA reconciliation	duplication/loss events	Step 14
+12	Candidate CDS + branches	BUSTED/aBSREL/RELAX	selection/relaxation evidence	Step 14
+13	Selected RNA-seq libraries	Salmon	candidate detection/TPM	Step 14
+14	Steps 6-13 evidence	evidence-weighted ranking	ranked families and genes	Steps 15-16
+15	Step 14 ranking	13 sensitivity scenarios	stability and bias reports	Step 16
+16	Steps 1-15 summaries	selected statistics + ggplot2	tables, nine PNGs, PDF	Step 17
+17	Steps 1-16 central results	inventory/checksum/package validation	final reproducibility archive	delivery
