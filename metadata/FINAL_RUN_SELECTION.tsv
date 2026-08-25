@@ -1,0 +1,17 @@
+step	analysis	selected_path	exists	selection_note
+step01	proteome_quality	/path/to/mollusc_project/result/step01_proteome_quality/current	yes	final BUSCO/core-species decision set
+step02	orthogroup_inference	/path/to/mollusc_project/result/step02_orthogroup_inference	yes	quota-safe OrthoFinder final tables and compressed large tables
+step03	species_tree	/path/to/mollusc_project/result/step03_species_tree	yes	class trees and combined restricted-MFP baseline
+step04	orthogroup_distribution	/path/to/mollusc_project/result/step04_orthogroup_distribution/run_18269662	yes	final distribution run
+step05	gene_family_evolution	/path/to/mollusc_project/result/step05_gene_family_evolution	yes	Bivalvia and Gastropoda CAFE Base-model results
+step06	candidate_gene_families	/path/to/mollusc_project/result/step06_candidate_gene_families/run_18271359	yes	final Base-model candidate extraction
+step07	functional_annotation	/path/to/mollusc_project/result/step07_functional_annotation	yes	final eggNOG-mapper results
+step08	functional_enrichment	/path/to/mollusc_project/result/step08_functional_enrichment/run_18272100	yes	candidate-internal orthogroup enrichment
+step09	candidate_sequence_validation	/path/to/mollusc_project/result/step09_candidate_sequence_validation	yes	Pfam 38.2 direct validation
+step10	candidate_family_phylogenetics	/path/to/mollusc_project/result/step10_candidate_family_phylogenetics/run_18274798	yes	60 completed supported trees
+step11	gene_tree_species_tree_reconciliation	/path/to/mollusc_project/result/step11_gene_tree_species_tree_reconciliation	yes	final DL-LCA reconciliation
+step12	molecular_evolution	/path/to/mollusc_project/result/step12_molecular_evolution/run_18288232	yes	final HyPhy results
+step13	transcriptomic_integration	/path/to/mollusc_project/result/step13_transcriptomic_integration/run_18420304	yes	six single-library Salmon datasets; no DE
+step14	integrated_candidate_prioritisation	/path/to/mollusc_project/result/step14_integrated_candidate_prioritisation/run_18427340	yes	final evidence-weighted ranking
+step15	sensitivity_bias_analysis	/path/to/mollusc_project/result/step15_sensitivity_bias_analysis/run_18431248	yes	corrected baseline-consistent run; run_18428504 is historical
+step16	statistical_analysis_visualisation	/path/to/mollusc_project/result/step16_statistical_analysis_visualisation/run_18451973	yes	final statistics and nine-figure set

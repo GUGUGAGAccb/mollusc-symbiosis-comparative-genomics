@@ -1,0 +1,2 @@
+date	target	bytes_removed	reason	recoverability	other_data_removed
+2026-08-16	/path/to/hpc_home/project/sra_cache/SRR5760179/SRR5760179.sra	7883386705	recoverable SRA download cache; paired FASTQ outputs retained	redownload from SRA accession SRR5760179	empty cache/tmp directories only

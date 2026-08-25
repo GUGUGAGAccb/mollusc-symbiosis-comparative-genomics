@@ -1,0 +1,13 @@
+category	published_value	status	note
+project_root	/path/to/mollusc_project	PASS_replaced	All original user-specific project-root occurrences were replaced.
+conda_base	/path/to/miniconda3	PASS_replaced	All original user-specific Conda-base occurrences were replaced.
+hpc_home	/path/to/hpc_home	PASS_replaced	All remaining user-specific home-path occurrences were replaced.
+hpc_username	HPC_USER	PASS_replaced	The original cluster username is absent from tracked files.
+slurm_account	YOUR_SLURM_ACCOUNT	PASS_replaced	The original Slurm account is absent from tracked files and ledger metadata.
+slurm_actor_id	USER_ID	PASS_replaced	Numeric Slurm cancellation actor identifiers were anonymised.
+site_software_path	EGGNOG_TAXDB	PASS_replaced	The site-specific eggNOG taxonomy-database path was replaced by a configurable placeholder.
+local_macos_paths	none	PASS_no_matches	No local user-home path is present in tracked files.
+personal_email	none	PASS_no_matches	No personal email address is present in tracked files.
+credentials	none	PASS_no_matches	No password, access token or private-key block is present in tracked files.
+git_history	single_sanitised_root_commit	PASS_rewritten	The local repository history was rebuilt so the pre-sanitisation commit is not published or retained in Git references.
+source_archive	SHA256_only	PASS_offline	The unmodified source archive remains offline and is not included in GitHub.

@@ -1,0 +1,6 @@
+data	location	archive_policy
+OrthoFinder WorkingDirectory and reconstructible sequence/alignment trees	original orthofinder_results directories	not duplicated to avoid inode/quota pressure
+Raw/processed RNA-seq FASTQ and BAM	project rnaseq/source paths	not included in compact deliverables
+Primary genomes and proteomes	project genome/proteome directories	referenced by provenance; not duplicated
+Pfam 38.2 database	/path/to/mollusc_project/databases/pfam/current	retained on BluePebble; not included in compact package
+Conda environments	/path/to/mollusc_project/conda_envs	retained on BluePebble; versions recorded instead of copying
